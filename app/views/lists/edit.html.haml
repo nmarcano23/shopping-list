@@ -1,0 +1,10 @@
+.page-header
+  = link_to lists_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    =t('shared.actions.back')
+  = link_to @list, class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-info-sign
+    =t('shared.actions.show')
+  %h1= t('.title', list_name: @list.name)
+
+= render 'form'

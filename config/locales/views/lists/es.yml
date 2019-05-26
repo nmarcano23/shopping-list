@@ -1,0 +1,14 @@
+---
+es:
+  lists:
+    index:
+      title: 'Listas'
+      new_list: 'Nueva Lista'
+    show:
+      title: 'Detalles de la lista: %{list_name}'
+    edit:
+      title: 'Editando la lista: %{list_name}'
+    new:
+      title: 'Creando una lista'
+    shared:
+      delete_confirm: '¿Seguro? Se borran sus items tambien'

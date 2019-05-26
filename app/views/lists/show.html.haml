@@ -1,0 +1,12 @@
+.page-header
+  = link_to lists_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    = t('shared.actions.back')
+  = link_to edit_list_path(@list), class: 'btn btn-primary' do
+    %span.glyphicon.glyphicon-pencil
+    = t('shared.actions.edit')
+  %h1= t('.title', list_name: @list.name)
+
+%dl.dl-horizontal
+  %dt= "#{t('activerecord.attributes.list.name')}:"
+  %dd= @list.name

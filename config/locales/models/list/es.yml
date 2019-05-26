@@ -1,0 +1,13 @@
+es:
+  activerecord:
+    models:
+      list: 'Lista'
+    attributes:
+      list:
+        name: 'Nombre'
+    errors:
+      models:
+        list:
+          attributes:
+            name:
+              blank: "no puede estar en blanco."

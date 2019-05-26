@@ -1,0 +1,11 @@
+---
+es:
+  products:
+    index:
+      title: 'Productos'
+    show:
+      title: 'Detalles del producto: %{product_name}'
+    edit:
+      title: 'Editando el producto: %{product_name}'
+    new:
+      title: 'Creando un producto'

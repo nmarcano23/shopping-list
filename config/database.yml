@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV.fetch("DB_NAME") { 'shopping-list_development' } %>
+  database: <%= ENV.fetch("DB_NAME") { 'shopping_list_development' } %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV.fetch("DB_NAME") { 'shopping-list_test' } %>
+  database: <%= ENV.fetch("DB_NAME") { 'shopping_list_test' } %>
   username: <%= ENV.fetch("DB_USER") { 'test' } %>
   password: <%= ENV.fetch("DB_PASS") { 'test' } %>
 

@@ -1,0 +1,7 @@
+.page-header
+  = link_to lists_path, class: 'btn btn-default' do
+    %span.glyphicon.glyphicon-list-alt
+    = t('shared.actions.back')
+  %h1= t('.title')
+
+= render 'form'

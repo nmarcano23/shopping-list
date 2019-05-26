@@ -10,7 +10,8 @@ module ShoppingList
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
-    config.load_defaults 5.2
+    config.i18n.default_locale = :es
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'env_variables.yml')
       YAML.load(File.open(env_file))[Rails.env].each do |key, value|

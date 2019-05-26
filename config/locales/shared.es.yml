@@ -1,0 +1,14 @@
+---
+es:
+  shared:
+    app_name: 'Compras'
+    save_failure_message: 'evitaron que se guardara este elemento:'
+    actions:
+      title: 'Acciones'
+      create: 'Crear'
+      edit: 'Editar'
+      delete: 'Eliminar'
+      show: 'Detalles'
+      close: 'Cerrar'
+      open: 'Abrir'
+      back: 'Volver'
